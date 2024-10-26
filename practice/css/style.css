@@ -1,0 +1,131 @@
+html {
+  font-size: 100%;
+}
+
+img{
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+.wrapper{
+  max-width: 960px;
+  margin: 0 auto 100px auto;
+  padding: 0 4%;
+  text-align: center;
+}
+
+#header{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#header img{
+  height: 40px;
+}
+
+#header ul{
+  padding: 10px 0;
+  display: flex;
+}
+
+#header li{
+  margin-left: 30px;
+  list-style: none;
+}
+
+#header li a{
+  color: #24292e;
+}
+
+#header li a:hover{
+  opacity: 0.7;
+}
+
+.mainpicture{
+  margin-bottom: 80px;
+}
+
+.mainpicture img{
+  height: 600px;
+  max-width: 1920px;
+  width: 100%;
+  object-fit: cover;
+}
+
+#section1 .myprofile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section1 img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+#section1 .text{
+  text-align: left;
+}
+
+#section1 h2{
+  text-decoration: underline;
+}
+
+#section2 ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+#section2 li{
+  width: 32%;
+  list-style: none;
+
+  
+}
+
+.content-title{
+  font-size: 1ren;
+  margin: 10px 0;
+}
+
+li{
+  list-style: none;
+}
+
+#footer{
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .mainpicture img{
+   height: calc(100vh - 60px);
+  }
+}
+
+@media screen and (max-width: 600px){
+  #section1 .myprofile{
+   flex-direction: column;
+  }
+  #section1 img{
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #section2 ul{
+    flex-direction: column;
+    padding: 0;
+  }
+  #section2 li{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
